@@ -1,0 +1,33 @@
+/* Navbar Styling */
+
+// .nav {
+//   padding-left: 15%;
+//   padding-right: 15%;
+// }
+
+.navWrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navBarItems {
+  display: flex;
+  gap: 4rem;
+}
+
+.navItem {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.lineBreak {
+  margin-top: 1.5rem;
+  opacity: 0.1;
+  width: 100%;
+}
