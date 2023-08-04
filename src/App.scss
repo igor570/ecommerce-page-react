@@ -14,3 +14,13 @@ body {
   padding-left: 15%;
   padding-right: 15%;
 }
+
+.productWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.cartWrapper {
+  display: flex;
+  flex-direction: column;
+}
