@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/ProductDetails.scss'
-import CartCard from './CartCard'
+import CartCard from './CartCard.jsx'
 
 const ProductDetails = ({ details }) => {
   return (

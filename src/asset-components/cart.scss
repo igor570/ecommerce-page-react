@@ -1,0 +1,18 @@
+@import '../variables.scss';
+
+.cartWrapper {
+  display: flex;
+  flex-direction: row;
+}
+.cartQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  background-color: $pale_main_orange;
+  color: $main_orange;
+  width: 3rem;
+  height: 1.5rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+}

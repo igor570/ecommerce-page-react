@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../asset-components/Logo.jsx'
+import Cart from '../asset-components/Cart.jsx'
 import '../components/navBar.scss'
 
 const NavBar = () => {
@@ -26,6 +27,7 @@ const NavBar = () => {
             <a href='#' className='navItem'>
               Contact
             </a>
+            <Cart />
           </div>
         </div>
         <hr className='lineBreak'></hr>
