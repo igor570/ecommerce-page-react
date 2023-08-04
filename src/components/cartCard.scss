@@ -1,1 +1,51 @@
 @import '../variables.scss';
+
+.cartContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.counterWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.count {
+  display: flex;
+  background-color: $very_light_grey;
+  height: 3.5rem;
+  width: 4rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.btn {
+  width: 3.2rem;
+  height: 3.5rem;
+  border: none;
+  color: $main_orange;
+  background-color: $very_light_grey;
+}
+
+.left {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+.right {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+}
+
+.addCartButton {
+  margin-left: 1rem;
+  width: 14rem;
+  height: 3.7rem;
+  background-color: $main_orange;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}

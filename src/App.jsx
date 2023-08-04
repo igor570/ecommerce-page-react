@@ -2,7 +2,6 @@ import './App.scss'
 import NavBar from './components/NavBar'
 import ProductGallery from './components/ProductGallery'
 import ProductDetails from './components/ProductDetails'
-import CartCard from './components/cartCard'
 
 function App() {
   const productInfo = {
@@ -19,10 +18,7 @@ function App() {
       <NavBar />
       <div className='productWrapper'>
         <ProductGallery />
-        <div className='cartWrapper'>
-          <ProductDetails details={productInfo} />
-          <CartCard />
-        </div>
+        <ProductDetails details={productInfo} />
       </div>
     </>
   )

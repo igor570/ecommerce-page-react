@@ -1,5 +1,6 @@
 import React from 'react'
 import '../components/ProductDetails.scss'
+import CartCard from './CartCard'
 
 const ProductDetails = ({ details }) => {
   return (
@@ -13,6 +14,7 @@ const ProductDetails = ({ details }) => {
           <div className='discountTag'> {details.discount}</div>
         </div>
         <div className='salePrice'>{details.salePrice}</div>
+        <CartCard />
       </div>
     </>
   )
