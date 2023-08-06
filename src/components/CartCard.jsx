@@ -1,18 +1,20 @@
 import '../components/cartCard.scss'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { appContext } from '../App'
 
 const CartCard = () => {
-  const [count, setCount] = useState(0)
+  const { setCount } = useContext(appContext)
+  const [currentCount, setCurrentCount] = useState(0)
   function increaseCount() {
-    setCount((prevCount) => prevCount + 1)
+    setCurrentCount((prevCount) => prevCount + 1)
   }
 
   function decreaseCount() {
-    if (count > 0) {
-      setCount((prevCount) => prevCount - 1)
-      console.log(count)
+    if (currentCount > 0) {
+      setCurrentCount((prevCount) => prevCount - 1)
     }
   }
+
   return (
     <div className='cartContainer'>
       <div className='counterWrapper'>
@@ -22,7 +24,7 @@ const CartCard = () => {
           value='-'
           onClick={decreaseCount}
         ></input>
-        <div className='count'>{count}</div>
+        <div className='count'>{currentCount}</div>
         <input
           type='button'
           className='btn right'
@@ -31,6 +33,9 @@ const CartCard = () => {
         ></input>
       </div>
       <input
+        onClick={() => {
+          setCount(currentCount)
+        }}
         type='submit'
         className='addCartButton'
         value='Add to Cart'
