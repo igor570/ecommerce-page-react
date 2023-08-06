@@ -1,6 +1,9 @@
 import './cart.scss'
+import { appContext } from '../App'
+import { useContext } from 'react'
 
 const Cart = () => {
+  const { count } = useContext(appContext)
   return (
     <div className='cartWrapper'>
       <svg width='22' height='20' xmlns='http://www.w3.org/2000/svg'>
@@ -10,7 +13,7 @@ const Cart = () => {
           fill-rule='nonzero'
         />
       </svg>
-      <div className='cartQuantity'></div>
+      <div className='cartQuantity'>{count}</div>
     </div>
   )
 }
