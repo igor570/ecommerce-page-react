@@ -13,7 +13,7 @@ const Cart = () => {
           fill-rule='nonzero'
         />
       </svg>
-      <div className='cartQuantity'>{count}</div>
+      {count > 0 ? <div className='cartQuantity'>{count}</div> : null}
     </div>
   )
 }

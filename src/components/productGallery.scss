@@ -1,3 +1,5 @@
+@import '../variables.scss';
+
 .galleryWrapper {
   width: 100%;
   width: max-content;
@@ -19,8 +21,16 @@
 .smallContainer {
   width: 6rem;
   height: 6rem;
-  background-color: red;
   margin-top: 7%;
   border-radius: 0.3rem;
   object-fit: fill;
+  &:hover {
+    outline: 3px solid $main_orange;
+    transition: ease-in 0.1s;
+    cursor: pointer;
+  }
+  &:active {
+    opacity: 0.8;
+    cursor: pointer;
+  }
 }
